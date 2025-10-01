@@ -1,6 +1,6 @@
 namespace Viewer;
 
-public partial class Form1 : Form
+internal sealed partial class Form1 : Form
 {
     public Form1()
     {
