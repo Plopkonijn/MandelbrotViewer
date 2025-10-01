@@ -24,16 +24,37 @@ partial class Form1
     #region Windows Form Designer generated code
 
     /// <summary>
-    ///  Required method for Designer support - do not modify
-    ///  the contents of this method with the code editor.
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent()
     {
-        this.components = new System.ComponentModel.Container();
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(800, 450);
-        this.Text = "Form1";
+        pictureBox1 = new System.Windows.Forms.PictureBox();
+        ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+        SuspendLayout();
+        // 
+        // pictureBox1
+        // 
+        pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+        pictureBox1.Location = new System.Drawing.Point(0, 0);
+        pictureBox1.Name = "pictureBox1";
+        pictureBox1.Size = new System.Drawing.Size(400, 400);
+        pictureBox1.TabIndex = 0;
+        pictureBox1.TabStop = false;
+        pictureBox1.Paint += pictureBox1_Paint;
+        // 
+        // Form1
+        // 
+        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        ClientSize = new System.Drawing.Size(400, 400);
+        Controls.Add(pictureBox1);
+        Text = "Form1";
+        ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+        ResumeLayout(false);
     }
+
+    private System.Windows.Forms.PictureBox pictureBox1;
 
     #endregion
 }
